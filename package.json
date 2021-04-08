@@ -2,11 +2,19 @@
   "name": "replicate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/replicate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c build/config.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.44.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  }
 }
